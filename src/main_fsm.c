@@ -38,8 +38,8 @@
 
 #if ACTIVE_PROJECT == PROJECT_MIT_DLEG
 #include "user-mn-MIT-DLeg-2dof.h"
-#include "free_ankle_EMG.h"
-#include "biom_state_machine.h"
+//#include "free_ankle_EMG.h"
+//#include "biom_state_machine.h"
 #endif
 
 //****************************************************************************
@@ -91,7 +91,7 @@ void mainFSM3(void)
     if (isEnabledUpdateSensors) {
     	updateSensorValues(&act1);	// updates all actuator sensors, will throw safety flags.
     }
-	updateVirtualJoint(&emgFreeGains);
+//	updateVirtualJoint(&emgFreeGains);
 
 }
 
